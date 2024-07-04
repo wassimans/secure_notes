@@ -9,10 +9,10 @@ pub use app::*;
 
 // TODO hide this plumbing
 
-uniffi::include_scaffolding!("{{core_name}}");
+uniffi::include_scaffolding!("shared");
 
 lazy_static! {
-    static ref CORE: Bridge<Effect, Counter> = Bridge::new(Core::new::<Capabilities>());
+    static ref CORE: Bridge<Effect, Counter> = Bridge::new(Core::new());
 }
 
 #[wasm_bindgen]

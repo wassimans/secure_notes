@@ -1,14 +1,14 @@
 [workspace]
-members = ["shared", "shared_types", "web-dioxus", "web-leptos", "web-yew"]
+members = ["shared", "shared_types"]
 resolver = "1"
 
 [workspace.package]
-authors = ["Red Badger Consulting Limited"]
+authors = ["Wassim Mansouri <wassim@wassimans.com>"]
 edition = "2021"
-repository = "https://github.com/redbadger/crux/"
+repository = "https://github.com/wassimans/secure_notes"
 license = "Apache-2.0"
-keywords = ["crux", "crux_core", "cross-platform-ui", "ffi", "wasm"]
-rust-version = "1.66"
+keywords = ["crux", "crux_core", "cross-platform-ui", "ffi"]
+rust-version = "1.79.0"
 
 [workspace.dependencies]
 anyhow = "1.0.79"

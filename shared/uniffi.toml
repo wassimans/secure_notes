@@ -1,7 +1,7 @@
 [bindings.kotlin]
-package_name = "com.example.{{workspace}}.{{core_name}}"
-cdylib_name = "{{core_name}}"
+package_name = "com.wassimans.secure_notes.shared"
+cdylib_name = "shared"
 
 [bindings.swift]
-cdylib_name = "{{core_name}}_ffi"
+cdylib_name = "shared_ffi"
 omit_argument_labels = true
