@@ -13,6 +13,7 @@ rust-version = "1.79.0"
 [workspace.dependencies]
 anyhow = "1.0.79"
 serde = "1.0.195"
+crux_core = "0.8"
 
 [workspace.metadata.bin]
 cargo-xcode = { version = "=1.7.0" }

@@ -264,7 +264,7 @@ RustBuffer uniffi_shared_fn_func_process_event(RustBuffer msg, RustCallStatus *_
 #ifndef UNIFFI_FFIDEF_UNIFFI_SHARED_FN_FUNC_VIEW
 #define UNIFFI_FFIDEF_UNIFFI_SHARED_FN_FUNC_VIEW
 RustBuffer uniffi_shared_fn_func_view(RustCallStatus *_Nonnull out_status
-
+    
 );
 #endif
 #ifndef UNIFFI_FFIDEF_FFI_SHARED_RUSTBUFFER_ALLOC
@@ -550,24 +550,25 @@ void ffi_shared_rust_future_complete_void(uint64_t handle, RustCallStatus *_Nonn
 #ifndef UNIFFI_FFIDEF_UNIFFI_SHARED_CHECKSUM_FUNC_HANDLE_RESPONSE
 #define UNIFFI_FFIDEF_UNIFFI_SHARED_CHECKSUM_FUNC_HANDLE_RESPONSE
 uint16_t uniffi_shared_checksum_func_handle_response(void
-
+    
 );
 #endif
 #ifndef UNIFFI_FFIDEF_UNIFFI_SHARED_CHECKSUM_FUNC_PROCESS_EVENT
 #define UNIFFI_FFIDEF_UNIFFI_SHARED_CHECKSUM_FUNC_PROCESS_EVENT
 uint16_t uniffi_shared_checksum_func_process_event(void
-
+    
 );
 #endif
 #ifndef UNIFFI_FFIDEF_UNIFFI_SHARED_CHECKSUM_FUNC_VIEW
 #define UNIFFI_FFIDEF_UNIFFI_SHARED_CHECKSUM_FUNC_VIEW
 uint16_t uniffi_shared_checksum_func_view(void
-
+    
 );
 #endif
 #ifndef UNIFFI_FFIDEF_FFI_SHARED_UNIFFI_CONTRACT_VERSION
 #define UNIFFI_FFIDEF_FFI_SHARED_UNIFFI_CONTRACT_VERSION
 uint32_t ffi_shared_uniffi_contract_version(void
-
+    
 );
 #endif
+

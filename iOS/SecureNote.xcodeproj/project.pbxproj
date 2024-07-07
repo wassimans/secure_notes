@@ -3,24 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08A5891079278B0627EECC52 /* SharedTypes in Frameworks */ = {isa = PBXBuildFile; productRef = 32258924E0AD419BAA621949 /* SharedTypes */; };
-		0D4D3C5B2AA243A48B9CEE38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6C59672AA736317738B5C /* ContentView.swift */; };
-		4467D267096A960C23F9FF3B /* libshared_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A61FB6787C24656A044CC /* libshared_static.a */; };
-		4A7935DA2D4B24A0427339BC /* shared.udl in Sources */ = {isa = PBXBuildFile; fileRef = 1465E5EDE4F684AD5291C0A3 /* shared.udl */; };
-		5B3B5266A24F1FA1E1827FB4 /* uniffi-bindgen in Resources */ = {isa = PBXBuildFile; fileRef = 4D70971C7274DF4D3B964CC5 /* uniffi-bindgen */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B80467C7DA8DB82760663B44 /* CounterAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D533D9BD281C15290E4016E5 /* CounterAppApp.swift */; };
+		5E93F63E85AFE234A2FCE30B /* libshared_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F652B78580AEC59DFF0ACA6D /* libshared_static.a */; };
+		64F5417EE923768AABCC7E9E /* SharedTypes in Frameworks */ = {isa = PBXBuildFile; productRef = 9123A930B4194126C760B7A7 /* SharedTypes */; };
+		CF080BB62C3AEE2B00A372AE /* core.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080BB52C3AEE2B00A372AE /* core.swift */; };
+		CF080BB82C3AEE4500A372AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080BB72C3AEE4500A372AE /* ContentView.swift */; };
+		CF080BBA2C3AEE5F00A372AE /* SecureNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080BB92C3AEE5F00A372AE /* SecureNoteApp.swift */; };
+		E274C71542EB85EDE32085F8 /* shared.udl in Sources */ = {isa = PBXBuildFile; fileRef = B035D2090C0952BB2E7BB568 /* shared.udl */; };
+		F9BA28C3C328705114097345 /* uniffi-bindgen in Resources */ = {isa = PBXBuildFile; fileRef = 0A6CF3D2BD86DE043E4A8D2C /* uniffi-bindgen */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
-		E45AE029B6F917B0FFA85BD6 /* PBXBuildRule */ = {
+		4054B19DBDA89B1FE88AF67B /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.udl";
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			name = "Generate FFI";
 			outputFiles = (
@@ -35,126 +38,128 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
-		3A18BF348254AA353DD83D2E /* PBXContainerItemProxy */ = {
+		4B7DD1931A619D5B7BDAF646 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 984E511AE1F9FB764F58CB7A /* Shared */;
-			proxyType = 2;
-			remoteGlobalIDString = CA607A8B44DCFB09138082B7;
-			remoteInfo = "shared-staticlib";
-		};
-		3DDA7AA1C70938E917385629 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 984E511AE1F9FB764F58CB7A /* Shared */;
+			containerPortal = 18904FD1C597C2A71831DD26 /* Shared */;
 			proxyType = 1;
-			remoteGlobalIDString = CA607A8B44DC564A772C0BD1;
-			remoteInfo = "shared-staticlib";
-		};
-		C284D65D30E22DC037BD5299 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 984E511AE1F9FB764F58CB7A /* Shared */;
-			proxyType = 1;
-			remoteGlobalIDString = CA60ACD85ECB522D2C86E215;
+			remoteGlobalIDString = CA02FA85CE9E4296ADE0F606;
 			remoteInfo = "uniffi-bindgen-bin";
 		};
-		CCA572612A851DA9009C82BD /* PBXContainerItemProxy */ = {
+		6E9B071116053137E043BD2D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 984E511AE1F9FB764F58CB7A /* Shared */;
+			containerPortal = 18904FD1C597C2A71831DD26 /* Shared */;
 			proxyType = 2;
-			remoteGlobalIDString = CA60D2B4E60D10F7F7FCAC5B;
+			remoteGlobalIDString = CA02FA85CE9E8109328FB0D5;
+			remoteInfo = "uniffi-bindgen-bin";
+		};
+		7C6EDE95B449BC26F8C2DD14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18904FD1C597C2A71831DD26 /* Shared */;
+			proxyType = 2;
+			remoteGlobalIDString = CA0049BF7D4FFB09138082B7;
+			remoteInfo = "shared-staticlib";
+		};
+		CF080BB32C3AEE0300A372AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18904FD1C597C2A71831DD26 /* Shared */;
+			proxyType = 2;
+			remoteGlobalIDString = CA01C51694BE10F7F7FCAC5B;
 			remoteInfo = "shared-cdylib";
 		};
-		F300AC884F93FAF703B505A3 /* PBXContainerItemProxy */ = {
+		E5EE1FA49A6BB3C7F9C4A801 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 984E511AE1F9FB764F58CB7A /* Shared */;
-			proxyType = 2;
-			remoteGlobalIDString = CA60ACD85ECB8109328FB0D5;
-			remoteInfo = "uniffi-bindgen-bin";
+			containerPortal = 18904FD1C597C2A71831DD26 /* Shared */;
+			proxyType = 1;
+			remoteGlobalIDString = CA0049BF7D4FD346A0A05154;
+			remoteInfo = "shared-staticlib";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1465E5EDE4F684AD5291C0A3 /* shared.udl */ = {isa = PBXFileReference; lastKnownFileType = text; path = shared.udl; sourceTree = "<group>"; };
-		67D62EB120D164DFC93E7EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		6D984934DC207C1C28EDF6F1 /* SharedTypes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SharedTypes; path = ../shared_types/generated/swift/SharedTypes; sourceTree = SOURCE_ROOT; };
-		984E511AE1F9FB764F58CB7A /* Shared */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Shared; path = ../shared/shared.xcodeproj; sourceTree = "<group>"; };
-		9D06BFB95E0269CB9E1CD716 /* CounterApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CounterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D533D9BD281C15290E4016E5 /* CounterAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAppApp.swift; sourceTree = "<group>"; };
-		D6A6C59672AA736317738B5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18904FD1C597C2A71831DD26 /* Shared */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Shared; path = ../shared/shared.xcodeproj; sourceTree = "<group>"; };
+		1E78BA96A449C35021FC9D16 /* SharedTypes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SharedTypes; path = ../shared_types/generated/swift/SharedTypes; sourceTree = SOURCE_ROOT; };
+		361DAFF4C6A759B8F7521565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A11BF39F730A02732CC9DC96 /* SecureNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B035D2090C0952BB2E7BB568 /* shared.udl */ = {isa = PBXFileReference; lastKnownFileType = text; path = shared.udl; sourceTree = "<group>"; };
+		CF080BB52C3AEE2B00A372AE /* core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = core.swift; sourceTree = "<group>"; };
+		CF080BB72C3AEE4500A372AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF080BB92C3AEE5F00A372AE /* SecureNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNoteApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BDE534E147194D3AC42ADD82 /* Frameworks */ = {
+		ED7CAB605ED66A6B01D056B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4467D267096A960C23F9FF3B /* libshared_static.a in Frameworks */,
-				08A5891079278B0627EECC52 /* SharedTypes in Frameworks */,
+				5E93F63E85AFE234A2FCE30B /* libshared_static.a in Frameworks */,
+				64F5417EE923768AABCC7E9E /* SharedTypes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B75A283E60878770D306B2A /* src */ = {
+		2EDE27BA09D9C2AD2679383A /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				1465E5EDE4F684AD5291C0A3 /* shared.udl */,
+				1E78BA96A449C35021FC9D16 /* SharedTypes */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		509CA1A9C24AFE15EF62CD3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A11BF39F730A02732CC9DC96 /* SecureNote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F44E76991EE21BCEA163887 /* SecureNote */ = {
+			isa = PBXGroup;
+			children = (
+				361DAFF4C6A759B8F7521565 /* Info.plist */,
+				CF080BB52C3AEE2B00A372AE /* core.swift */,
+				CF080BB72C3AEE4500A372AE /* ContentView.swift */,
+				CF080BB92C3AEE5F00A372AE /* SecureNoteApp.swift */,
+			);
+			path = SecureNote;
+			sourceTree = "<group>";
+		};
+		6A3B10596898081DD905CBEB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B035D2090C0952BB2E7BB568 /* shared.udl */,
 			);
 			name = src;
 			path = ../shared/src;
 			sourceTree = "<group>";
 		};
-		20BEF56E8A58908817A7D5C2 /* CounterApp */ = {
+		6DBF1B1B02DC011E5EF85696 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				D6A6C59672AA736317738B5C /* ContentView.swift */,
-				D533D9BD281C15290E4016E5 /* CounterAppApp.swift */,
-				67D62EB120D164DFC93E7EC0 /* Info.plist */,
-			);
-			path = CounterApp;
-			sourceTree = "<group>";
-		};
-		79077CB87B15CD5B056551FE /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				6D984934DC207C1C28EDF6F1 /* SharedTypes */,
-			);
-			name = Packages;
-			sourceTree = SOURCE_ROOT;
-		};
-		91C0E33BEDE2E530350B68C8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9D06BFB95E0269CB9E1CD716 /* CounterApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B86E33DC287DA7AC92DD5972 = {
-			isa = PBXGroup;
-			children = (
-				20BEF56E8A58908817A7D5C2 /* CounterApp */,
-				79077CB87B15CD5B056551FE /* Packages */,
-				1B75A283E60878770D306B2A /* src */,
-				91C0E33BEDE2E530350B68C8 /* Products */,
-				B95BE3C5CA8A234A4D1E9F0E /* Projects */,
-			);
-			sourceTree = "<group>";
-		};
-		B95BE3C5CA8A234A4D1E9F0E /* Projects */ = {
-			isa = PBXGroup;
-			children = (
-				984E511AE1F9FB764F58CB7A /* Shared */,
+				18904FD1C597C2A71831DD26 /* Shared */,
 			);
 			name = Projects;
 			sourceTree = "<group>";
 		};
-		CFB8F28E88E6BF19B5129CB8 /* Products */ = {
+		C573EB1E51A60490D51FC305 = {
 			isa = PBXGroup;
 			children = (
-				BA6A61FB6787C24656A044CC /* libshared_static.a */,
-				CCA572622A851DA9009C82BD /* shared.dylib */,
-				4D70971C7274DF4D3B964CC5 /* uniffi-bindgen */,
+				2EDE27BA09D9C2AD2679383A /* Packages */,
+				5F44E76991EE21BCEA163887 /* SecureNote */,
+				6A3B10596898081DD905CBEB /* src */,
+				509CA1A9C24AFE15EF62CD3B /* Products */,
+				6DBF1B1B02DC011E5EF85696 /* Projects */,
+			);
+			sourceTree = "<group>";
+		};
+		FC8DEF4F5998013D29B6B284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F652B78580AEC59DFF0ACA6D /* libshared_static.a */,
+				CF080BB42C3AEE0300A372AE /* shared.dylib */,
+				0A6CF3D2BD86DE043E4A8D2C /* uniffi-bindgen */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,128 +167,132 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		010B0A238A076EB26DD23BB1 /* CounterApp */ = {
+		81C0F317E094AAD4CA80885C /* SecureNote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7140C4C9BEE130CB4BA6DAD /* Build configuration list for PBXNativeTarget "CounterApp" */;
+			buildConfigurationList = B9CF61E757C36D6B49C8EFAE /* Build configuration list for PBXNativeTarget "SecureNote" */;
 			buildPhases = (
-				29206CB1A0ECB217F5F98845 /* Sources */,
-				7EDA081FAFAA7F31D0463D79 /* Resources */,
-				BDE534E147194D3AC42ADD82 /* Frameworks */,
+				827B109DCE1DC93F52D3790C /* Sources */,
+				CBF50537341F86908AB15DAA /* Resources */,
+				ED7CAB605ED66A6B01D056B4 /* Frameworks */,
 			);
 			buildRules = (
-				E45AE029B6F917B0FFA85BD6 /* PBXBuildRule */,
+				4054B19DBDA89B1FE88AF67B /* PBXBuildRule */,
 			);
 			dependencies = (
-				9185B3D491AE14F3B6E7DD76 /* PBXTargetDependency */,
-				99E7D76F76C66E4FE9312F30 /* PBXTargetDependency */,
+				320560FEAD0B7209AF652609 /* PBXTargetDependency */,
+				6F3E6B05FE79E414B6389358 /* PBXTargetDependency */,
 			);
-			name = CounterApp;
+			name = SecureNote;
 			packageProductDependencies = (
-				32258924E0AD419BAA621949 /* SharedTypes */,
+				9123A930B4194126C760B7A7 /* SharedTypes */,
 			);
-			productName = CounterApp;
-			productReference = 9D06BFB95E0269CB9E1CD716 /* CounterApp.app */;
+			productName = SecureNote;
+			productReference = A11BF39F730A02732CC9DC96 /* SecureNote.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CF1FACE8C7C58FDD63D46C13 /* Project object */ = {
+		62E20BEBEB5DB520347845E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = 7851C38F90AFE0DC30E065D2 /* Build configuration list for PBXProject "CounterApp" */;
-			compatibilityVersion = "Xcode 11.0";
+			buildConfigurationList = D46D396C9B273E30066CB3CE /* Build configuration list for PBXProject "SecureNote" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
 			);
-			mainGroup = B86E33DC287DA7AC92DD5972;
+			mainGroup = C573EB1E51A60490D51FC305;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = CFB8F28E88E6BF19B5129CB8 /* Products */;
-					ProjectRef = 984E511AE1F9FB764F58CB7A /* Shared */;
+					ProductGroup = FC8DEF4F5998013D29B6B284 /* Products */;
+					ProjectRef = 18904FD1C597C2A71831DD26 /* Shared */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				010B0A238A076EB26DD23BB1 /* CounterApp */,
+				81C0F317E094AAD4CA80885C /* SecureNote */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4D70971C7274DF4D3B964CC5 /* uniffi-bindgen */ = {
+		0A6CF3D2BD86DE043E4A8D2C /* uniffi-bindgen */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "uniffi-bindgen";
-			remoteRef = F300AC884F93FAF703B505A3 /* PBXContainerItemProxy */;
+			remoteRef = 6E9B071116053137E043BD2D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BA6A61FB6787C24656A044CC /* libshared_static.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libshared_static.a;
-			remoteRef = 3A18BF348254AA353DD83D2E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CCA572622A851DA9009C82BD /* shared.dylib */ = {
+		CF080BB42C3AEE0300A372AE /* shared.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
 			path = shared.dylib;
-			remoteRef = CCA572612A851DA9009C82BD /* PBXContainerItemProxy */;
+			remoteRef = CF080BB32C3AEE0300A372AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F652B78580AEC59DFF0ACA6D /* libshared_static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libshared_static.a;
+			remoteRef = 7C6EDE95B449BC26F8C2DD14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7EDA081FAFAA7F31D0463D79 /* Resources */ = {
+		CBF50537341F86908AB15DAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B3B5266A24F1FA1E1827FB4 /* uniffi-bindgen in Resources */,
+				F9BA28C3C328705114097345 /* uniffi-bindgen in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		29206CB1A0ECB217F5F98845 /* Sources */ = {
+		827B109DCE1DC93F52D3790C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D4D3C5B2AA243A48B9CEE38 /* ContentView.swift in Sources */,
-				B80467C7DA8DB82760663B44 /* CounterAppApp.swift in Sources */,
-				4A7935DA2D4B24A0427339BC /* shared.udl in Sources */,
+				CF080BBA2C3AEE5F00A372AE /* SecureNoteApp.swift in Sources */,
+				CF080BB62C3AEE2B00A372AE /* core.swift in Sources */,
+				E274C71542EB85EDE32085F8 /* shared.udl in Sources */,
+				CF080BB82C3AEE4500A372AE /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9185B3D491AE14F3B6E7DD76 /* PBXTargetDependency */ = {
+		320560FEAD0B7209AF652609 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "uniffi-bindgen-bin";
-			targetProxy = C284D65D30E22DC037BD5299 /* PBXContainerItemProxy */;
+			targetProxy = 4B7DD1931A619D5B7BDAF646 /* PBXContainerItemProxy */;
 		};
-		99E7D76F76C66E4FE9312F30 /* PBXTargetDependency */ = {
+		6F3E6B05FE79E414B6389358 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "shared-staticlib";
-			targetProxy = 3DDA7AA1C70938E917385629 /* PBXContainerItemProxy */;
+			targetProxy = E5EE1FA49A6BB3C7F9C4A801 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		796BD0ACD6614E951D434587 /* Debug */ = {
+		2A8700E7A83738AAEC6513DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = CounterApp/Info.plist;
+				DEVELOPMENT_TEAM = D3XY49J59H;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = SecureNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,36 +302,14 @@
 					"-w",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.counter.CounterApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wassimans.SecureNote;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = generated/sharedFFI.h;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		836270C59FCC6D96A607D822 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = CounterApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"-w",
-					"-ObjC",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.counter.CounterApp;
-				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = generated/sharedFFI.h;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B4EC29AAFF2F22C740DBFB9F /* Release */ = {
+		6C5356D3865AD356E0A4BBC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -377,7 +364,7 @@
 			};
 			name = Release;
 		};
-		E81AA16697771FD928AEC5D5 /* Debug */ = {
+		98B165384982FD747C34A5D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -439,23 +426,47 @@
 			};
 			name = Debug;
 		};
+		BFAC4C7D0B1D2DF3C56C9DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = D3XY49J59H;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = SecureNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-w",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wassimans.SecureNote;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = generated/sharedFFI.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7851C38F90AFE0DC30E065D2 /* Build configuration list for PBXProject "CounterApp" */ = {
+		B9CF61E757C36D6B49C8EFAE /* Build configuration list for PBXNativeTarget "SecureNote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E81AA16697771FD928AEC5D5 /* Debug */,
-				B4EC29AAFF2F22C740DBFB9F /* Release */,
+				2A8700E7A83738AAEC6513DA /* Debug */,
+				BFAC4C7D0B1D2DF3C56C9DB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B7140C4C9BEE130CB4BA6DAD /* Build configuration list for PBXNativeTarget "CounterApp" */ = {
+		D46D396C9B273E30066CB3CE /* Build configuration list for PBXProject "SecureNote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				796BD0ACD6614E951D434587 /* Debug */,
-				836270C59FCC6D96A607D822 /* Release */,
+				98B165384982FD747C34A5D0 /* Debug */,
+				6C5356D3865AD356E0A4BBC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -463,11 +474,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		32258924E0AD419BAA621949 /* SharedTypes */ = {
+		9123A930B4194126C760B7A7 /* SharedTypes */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SharedTypes;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = CF1FACE8C7C58FDD63D46C13 /* Project object */;
+	rootObject = 62E20BEBEB5DB520347845E1 /* Project object */;
 }

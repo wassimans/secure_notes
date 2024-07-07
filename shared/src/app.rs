@@ -26,10 +26,10 @@ pub struct Capabilities {
 }
 
 #[derive(Default)]
-pub struct Counter;
+pub struct SecureNote;
 
 // ANCHOR: impl_app
-impl App for Counter {
+impl App for SecureNote {
     type Event = Event;
     type Model = Model;
     type ViewModel = ViewModel;
@@ -62,7 +62,7 @@ mod test {
 
     #[test]
     fn renders() {
-        let app = AppTester::<Counter, _>::default();
+        let app = AppTester::<SecureNote, _>::default();
         let mut model = Model::default();
 
         let update = app.update(Event::Reset, &mut model);
@@ -73,7 +73,7 @@ mod test {
 
     #[test]
     fn shows_initial_count() {
-        let app = AppTester::<Counter, _>::default();
+        let app = AppTester::<SecureNote, _>::default();
         let model = Model::default();
 
         let actual_view = app.view(&model).count;
@@ -83,7 +83,7 @@ mod test {
 
     #[test]
     fn increments_count() {
-        let app = AppTester::<Counter, _>::default();
+        let app = AppTester::<SecureNote, _>::default();
         let mut model = Model::default();
 
         let update = app.update(Event::Increment, &mut model);
@@ -98,7 +98,7 @@ mod test {
 
     #[test]
     fn decrements_count() {
-        let app = AppTester::<Counter, _>::default();
+        let app = AppTester::<SecureNote, _>::default();
         let mut model = Model::default();
 
         let update = app.update(Event::Decrement, &mut model);
@@ -113,7 +113,7 @@ mod test {
 
     #[test]
     fn resets_count() {
-        let app = AppTester::<Counter, _>::default();
+        let app = AppTester::<SecureNote, _>::default();
         let mut model = Model::default();
 
         app.update(Event::Increment, &mut model);
@@ -126,7 +126,7 @@ mod test {
 
     #[test]
     fn counts_up_and_down() {
-        let app = AppTester::<Counter, _>::default();
+        let app = AppTester::<SecureNote, _>::default();
         let mut model = Model::default();
 
         app.update(Event::Increment, &mut model);

@@ -1,4 +1,4 @@
-name: SimpleCounter
+name: SecureNote
 projectReferences:
   Shared:
     path: ../shared/shared.xcodeproj
@@ -6,16 +6,16 @@ packages:
   SharedTypes:
     path: ../shared_types/generated/swift/SharedTypes
 options:
-  bundleIdPrefix: com.example.simple_counter
+  bundleIdPrefix: com.wassimans
 attributes:
   BuildIndependentTargetsInParallel: true
 targets:
-  SimpleCounter:
+  SecureNote:
     type: application
     platform: iOS
     deploymentTarget: "15.0"
     sources:
-      - SimpleCounter
+      - SecureNote
       - path: ../shared/src/shared.udl
         buildPhase: sources
     dependencies:
@@ -23,7 +23,7 @@ targets:
       - target: Shared/shared-staticlib
       - package: SharedTypes
     info:
-      path: SimpleCounter/Info.plist
+      path: SecureNote/Info.plist
       properties:
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
