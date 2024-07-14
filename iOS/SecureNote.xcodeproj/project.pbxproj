@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E93F63E85AFE234A2FCE30B /* libshared_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F652B78580AEC59DFF0ACA6D /* libshared_static.a */; };
 		64F5417EE923768AABCC7E9E /* SharedTypes in Frameworks */ = {isa = PBXBuildFile; productRef = 9123A930B4194126C760B7A7 /* SharedTypes */; };
-		CF080BB62C3AEE2B00A372AE /* core.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080BB52C3AEE2B00A372AE /* core.swift */; };
-		CF080BB82C3AEE4500A372AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080BB72C3AEE4500A372AE /* ContentView.swift */; };
-		CF080BBA2C3AEE5F00A372AE /* SecureNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF080BB92C3AEE5F00A372AE /* SecureNoteApp.swift */; };
+		68AAFC9D1358A375336D7CB3 /* libshared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B96B6B999B2EFF6A7BD50EB1 /* libshared.a */; };
+		7C4B7EAA735851DE3CA819A5 /* SecureNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E67F4F8994B61FEFD96DB /* SecureNoteApp.swift */; };
+		8C743209DAF325A7B2309401 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEFDE394C18C2751E11A204 /* ContentView.swift */; };
+		B694A0E5198881C2796302BB /* core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480EBA364FD32B4A81A4050B /* core.swift */; };
 		E274C71542EB85EDE32085F8 /* shared.udl in Sources */ = {isa = PBXBuildFile; fileRef = B035D2090C0952BB2E7BB568 /* shared.udl */; };
 		F9BA28C3C328705114097345 /* uniffi-bindgen in Resources */ = {isa = PBXBuildFile; fileRef = 0A6CF3D2BD86DE043E4A8D2C /* uniffi-bindgen */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -22,8 +22,6 @@
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.udl";
 			fileType = pattern.proxy;
-			inputFiles = (
-			);
 			isEditable = 1;
 			name = "Generate FFI";
 			outputFiles = (
@@ -38,33 +36,26 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
-		4B7DD1931A619D5B7BDAF646 /* PBXContainerItemProxy */ = {
+		58A6D3824D5EC34468E095FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18904FD1C597C2A71831DD26 /* Shared */;
 			proxyType = 1;
-			remoteGlobalIDString = CA02FA85CE9E4296ADE0F606;
+			remoteGlobalIDString = CA01FA85CE9EC9E9420AF992;
 			remoteInfo = "uniffi-bindgen-bin";
 		};
 		6E9B071116053137E043BD2D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18904FD1C597C2A71831DD26 /* Shared */;
 			proxyType = 2;
-			remoteGlobalIDString = CA02FA85CE9E8109328FB0D5;
+			remoteGlobalIDString = CA01FA85CE9E8109328FB0D5;
 			remoteInfo = "uniffi-bindgen-bin";
 		};
-		7C6EDE95B449BC26F8C2DD14 /* PBXContainerItemProxy */ = {
+		D3998136925BD83F760F650B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18904FD1C597C2A71831DD26 /* Shared */;
 			proxyType = 2;
 			remoteGlobalIDString = CA0049BF7D4FFB09138082B7;
 			remoteInfo = "shared-staticlib";
-		};
-		CF080BB32C3AEE0300A372AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18904FD1C597C2A71831DD26 /* Shared */;
-			proxyType = 2;
-			remoteGlobalIDString = CA01C51694BE10F7F7FCAC5B;
-			remoteInfo = "shared-cdylib";
 		};
 		E5EE1FA49A6BB3C7F9C4A801 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -76,14 +67,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CEFDE394C18C2751E11A204 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18904FD1C597C2A71831DD26 /* Shared */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Shared; path = ../shared/shared.xcodeproj; sourceTree = "<group>"; };
 		1E78BA96A449C35021FC9D16 /* SharedTypes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SharedTypes; path = ../shared_types/generated/swift/SharedTypes; sourceTree = SOURCE_ROOT; };
 		361DAFF4C6A759B8F7521565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		A11BF39F730A02732CC9DC96 /* SecureNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		480EBA364FD32B4A81A4050B /* core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = core.swift; sourceTree = "<group>"; };
+		A11BF39F730A02732CC9DC96 /* SecureNote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SecureNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B035D2090C0952BB2E7BB568 /* shared.udl */ = {isa = PBXFileReference; lastKnownFileType = text; path = shared.udl; sourceTree = "<group>"; };
-		CF080BB52C3AEE2B00A372AE /* core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = core.swift; sourceTree = "<group>"; };
-		CF080BB72C3AEE4500A372AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CF080BB92C3AEE5F00A372AE /* SecureNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNoteApp.swift; sourceTree = "<group>"; };
+		C98E67F4F8994B61FEFD96DB /* SecureNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNoteApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E93F63E85AFE234A2FCE30B /* libshared_static.a in Frameworks */,
+				68AAFC9D1358A375336D7CB3 /* libshared.a in Frameworks */,
 				64F5417EE923768AABCC7E9E /* SharedTypes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,10 +109,10 @@
 		5F44E76991EE21BCEA163887 /* SecureNote */ = {
 			isa = PBXGroup;
 			children = (
+				0CEFDE394C18C2751E11A204 /* ContentView.swift */,
+				480EBA364FD32B4A81A4050B /* core.swift */,
 				361DAFF4C6A759B8F7521565 /* Info.plist */,
-				CF080BB52C3AEE2B00A372AE /* core.swift */,
-				CF080BB72C3AEE4500A372AE /* ContentView.swift */,
-				CF080BB92C3AEE5F00A372AE /* SecureNoteApp.swift */,
+				C98E67F4F8994B61FEFD96DB /* SecureNoteApp.swift */,
 			);
 			path = SecureNote;
 			sourceTree = "<group>";
@@ -157,8 +148,7 @@
 		FC8DEF4F5998013D29B6B284 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F652B78580AEC59DFF0ACA6D /* libshared_static.a */,
-				CF080BB42C3AEE0300A372AE /* shared.dylib */,
+				B96B6B999B2EFF6A7BD50EB1 /* libshared.a */,
 				0A6CF3D2BD86DE043E4A8D2C /* uniffi-bindgen */,
 			);
 			name = Products;
@@ -179,7 +169,7 @@
 				4054B19DBDA89B1FE88AF67B /* PBXBuildRule */,
 			);
 			dependencies = (
-				320560FEAD0B7209AF652609 /* PBXTargetDependency */,
+				84CD2B9A83E08C1651145D29 /* PBXTargetDependency */,
 				6F3E6B05FE79E414B6389358 /* PBXTargetDependency */,
 			);
 			name = SecureNote;
@@ -230,18 +220,11 @@
 			remoteRef = 6E9B071116053137E043BD2D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CF080BB42C3AEE0300A372AE /* shared.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = shared.dylib;
-			remoteRef = CF080BB32C3AEE0300A372AE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F652B78580AEC59DFF0ACA6D /* libshared_static.a */ = {
+		B96B6B999B2EFF6A7BD50EB1 /* libshared.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libshared_static.a;
-			remoteRef = 7C6EDE95B449BC26F8C2DD14 /* PBXContainerItemProxy */;
+			path = libshared.a;
+			remoteRef = D3998136925BD83F760F650B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -262,25 +245,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF080BBA2C3AEE5F00A372AE /* SecureNoteApp.swift in Sources */,
-				CF080BB62C3AEE2B00A372AE /* core.swift in Sources */,
+				8C743209DAF325A7B2309401 /* ContentView.swift in Sources */,
+				7C4B7EAA735851DE3CA819A5 /* SecureNoteApp.swift in Sources */,
+				B694A0E5198881C2796302BB /* core.swift in Sources */,
 				E274C71542EB85EDE32085F8 /* shared.udl in Sources */,
-				CF080BB82C3AEE4500A372AE /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		320560FEAD0B7209AF652609 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "uniffi-bindgen-bin";
-			targetProxy = 4B7DD1931A619D5B7BDAF646 /* PBXContainerItemProxy */;
-		};
 		6F3E6B05FE79E414B6389358 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "shared-staticlib";
 			targetProxy = E5EE1FA49A6BB3C7F9C4A801 /* PBXContainerItemProxy */;
+		};
+		84CD2B9A83E08C1651145D29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "uniffi-bindgen-bin";
+			targetProxy = 58A6D3824D5EC34468E095FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -290,7 +273,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = D3XY49J59H;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = SecureNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -431,7 +413,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = D3XY49J59H;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = SecureNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

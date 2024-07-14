@@ -1,6 +1,3 @@
-[bindings.kotlin]
-package_name = "com.wassimans.secure_notes.shared"
-cdylib_name = "shared"
 
 [bindings.swift]
 cdylib_name = "shared_ffi"
